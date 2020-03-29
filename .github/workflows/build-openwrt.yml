@@ -1,11 +1,10 @@
-#
-# This is free software, lisence use MIT.
-# 
-# Copyright (C) 2019 P3TERX <https://p3terx.com>
-# Copyright (C) 2019 KFERMercer <KFER.Mercer@gmail.com>
-# 
-# <https://github.com/KFERMercer/OpenWrt-CI>
-# 
+##=================================================
+# https://github.com/P3TERX/Actions-OpenWrt
+# Description: Build OpenWrt using GitHub Actions
+# Lisence: MIT
+# Author: P3TERX
+# Blog: https://p3terx.com
+#=================================================
 
 name: Build OpenWrt
 
@@ -17,10 +16,10 @@ on:
       - dev-lean-lede
     paths:
       - '.config'
-  schedule:
-    - cron: 0 8 * * 5
+#  schedule:
+#    - cron: 0 8 * * 5
   watch:
-   types: [started
+    types: [started]
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
